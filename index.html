@@ -10,15 +10,18 @@
     <meta name="author" content="">
 
     <title>Welcome to Callaborate </title>
+    <link rel="shortcut icon" href="img/c.ico" />
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/cal.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,23 +52,22 @@
             <li>
                 <a href="#services">Services</a>
             </li>
-	    <!-- <li>
-            <a href="#portfolio">Portfolio</a>
-            </li> -->
-            <!-- <li>
-            <a href="#contact">Contact</a>
-            </li> -->
         </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Welcome to <font color="041e41">CAL</font><font color="ffb819">aborate</font>!</h1>
-            <h3>Dedicated to Help students collaborate better.</h3>
+      <div class="text-vertical-center">
+	<div class="row">
+	  <div class="col-md-6">
+	    
+	    <h1>Welcome to <font color="00B0DA">CAL</font><font color="ffb819">aborate</font>!</h1>
+            <h3>Helping students help students.</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-        </div>
+	  </div>
+	</div>
+	<!-- <div class="col-md-6">.col-md-6</div> -->
+      </div>
     </header>
 
     <!-- About -->
@@ -74,8 +76,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Need some help but don't have the cash for it? </h2>
-                    <h2>Try <font color="041e41">CAL</font><font color="ffb819">aborate</font>!</h2>
-                    <p class="lead">Earn points by using your time to help other Cal students, then exchange those points in return for the services you need.</p>
+                    <h2>Try <font color="00B0DA">CAL</font><font color="ffb819">aborate</font>!</h2>
+                    <p class="lead">Earn points by using your time to help your fellow students, then exchange those points in return for the services you need.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -85,63 +87,100 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="services" class="services bg-primary-cal">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
+	      <div class="col-lg-10 col-lg-offset-1">
+	      <!-- <div class="col-lg-12"> -->
+	      <!-- <h1>Our Services</h1>
+              <hr class="small"> -->
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pencil fa-stack-1x text-primary"></i>
+                                <i class="fa fa-pencil fa-stack-1x text-primary-cal"></i>
                             </span>
                                 <h4>
                                     <strong>Academic Tutoring</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Find students who can help you through a difficult course.</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+				
+                            </div>
+                            <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>Academic Tutoring</strong>
+                                </h4>
+                                <p>Find students who can help you through a difficult course.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+				
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-truck fa-stack-1x text-primary"></i>
+                                <i class="fa fa-truck fa-stack-1x text-primary-cal"></i>
                             </span>
                                 <h4>
                                     <strong>House Moving/Cleaning</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Make your move faster with help from a friend.</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
                             </div>
+                           <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>House Moving/Cleaning</strong>
+                                </h4>
+                                <p>Make your move faster with help from a friend.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+ 
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-car fa-stack-1x text-primary"></i>
+                                <i class="fa fa-car fa-stack-1x text-primary-cal"></i>
                             </span>
                                 <h4>
                                     <strong>Share Rides</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Don't want to Uber to the grocery every week? Catch a ride</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
                             </div>
+			    <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>Share Rides</strong>
+                                </h4>
+                                <p>Don't want to Uber to the grocery every week? Catch a ride</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-reorder fa-stack-1x text-primary"></i>
+                                <i class="fa fa-reorder fa-stack-1x text-primary-cal"></i>
                             </span>
                                 <h4>
                                     <strong>And many others...</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Resume critiques; Interview Prep; Physical training; </p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+			    <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>And many others... details</strong>
+                                </h4>
+                                <p>Resume critiques; Interview Prep; Physical training; </p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
                             </div>
                         </div>
                     </div>
@@ -154,36 +193,36 @@
         <!-- /.container -->
     </section>
 
-    <!-- Why us Section -->
-    <section id="why">
+    <!-- How it works secion -->
+    <section id="how">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
+                    <h2 class="section-heading">How it works</h2>
                     <hr class="small">
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Earning and using points</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-copyright fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="why-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="why-heading">Earn points</h4>
+                    <p class="text-muted">You get 100 points just for signing up! After those first 100, you can get new points by contributing to the community. The more you contribute, the more you earn.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="why-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="why-heading">Get help</h4>
+                    <p class="text-muted">Search on Calaborate to find students offering the services you need. Post what services you need and quickly find someone who can help. Decide </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="why-heading">Web Security</h4>
@@ -193,30 +232,132 @@
         </div>
     </section>
 
+    <section id="services" class="services bg-primary-cal">
+        <div class="container">
+            <div class="row text-center">
+	      <div class="col-lg-10 col-lg-offset-1">
+	      <!-- <div class="col-lg-12"> -->
+	      <!-- <h1>Our Services</h1>
+              <hr class="small"> -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pencil fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>Academic Tutoring</strong>
+                                </h4>
+                                <p>Find students who can help you through a difficult course.</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+				
+                            </div>
+                            <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>Academic Tutoring</strong>
+                                </h4>
+                                <p>Find students who can help you through a difficult course.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+				
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-truck fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>House Moving/Cleaning</strong>
+                                </h4>
+                                <p>Make your move faster with help from a friend.</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+                           <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>House Moving/Cleaning</strong>
+                                </h4>
+                                <p>Make your move faster with help from a friend.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+ 
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-car fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>Share Rides</strong>
+                                </h4>
+                                <p>Don't want to Uber to the grocery every week? Catch a ride</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+			    <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>Share Rides</strong>
+                                </h4>
+                                <p>Don't want to Uber to the grocery every week? Catch a ride</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-reorder fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>And many others...</strong>
+                                </h4>
+                                <p>Resume critiques; Interview Prep; Physical training; </p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+			    <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>And many others... details</strong>
+                                </h4>
+                                <p>Resume critiques; Interview Prep; Physical training; </p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Calaborate</strong>
                     </h4>
 		    <p>Berkeley Skydeck</p>
                     <p>2150 Shattuck Ave<br>Berkeley, CA 94704</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:inquiries@callaborate.com">inquiries@callaborate.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a class="text-primary-cal" href="mailto:inquiries@callaborate.com">inquiries@callaborate.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x text-primary-cal"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x text-primary-cal"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -234,34 +375,52 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+     // Closes the sidebar menu
+     $("#menu-close").click(function(e) {
+       e.preventDefault();
+       $("#sidebar-wrapper").toggleClass("active");
+     });
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+     // Opens the sidebar menu
+     $("#menu-toggle").click(function(e) {
+       e.preventDefault();
+       $("#sidebar-wrapper").toggleClass("active");
+     });
 
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+     // Scrolls to the selected menu item on the page
+     $(function() {
+       $('a[href*=#]:not([href=#])').click(function() {
+         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+           if (target.length) {
+             $('html,body').animate({
+               scrollTop: target.offset().top
+             }, 1000);
+             return false;
+           }
+         }
+       });
+     });
+
+     // Opens up the learn more boxes for each description
+     $(".learn-more").click(function(e) {
+       var service_item = $( this ).parent()[0];
+       var service_item_detail = $( $( this ).parents()[1] ).children()[1];
+       $( service_item ).slideUp(function() {
+	 $( service_item_detail ).slideDown();	 
+       });
+
+     });
+     $(".learn-less").click(function(e) {
+       var service_item_detail = $( this ).parent()[0];
+       var service_item = $( $( this ).parents()[1] ).children()[0];
+       $( service_item_detail ).slideUp(function() {
+	 $( service_item ).slideDown();	 
+       });
+     });
+
     </script>
 
 </body>
