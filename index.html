@@ -22,6 +22,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,34 +42,59 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">My Callaborate</a>
+                <a href="#top">Lisa's Callaborate</a>
             </li>
             <li>
-                <a href="#top">Home</a>
+                <a href="#top">My Profile</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="#about">My Tasks</a>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a href="#services">Find A Helper</a>
             </li>
         </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
-      <div class="text-vertical-center">
-	<div class="row">
-	  <div class="col-md-6">
-	    
-	    <h1>Welcome to <font color="00B0DA">CAL</font><font color="ffb819">aborate</font>!</h1>
+        <div class="text-vertical-center">
+            <h1>Welcome to <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>!</h1>
             <h3>Helping students help students.</h3>
             <br>
-	  </div>
-	</div>
-	<!-- <div class="col-md-6">.col-md-6</div> -->
-      </div>
+            <div class="btn btn-dark btn-lg signin">Sign Up</div>
+	    <!-- <div class="btn btn-dark btn-lg signin">Login</div> -->
+            <a href="#how" class="btn btn-dark btn-lg">How it works</a>
+        </div>
     </header>
+
+    <!-- Signup/in page  -->
+    <section id="signup" class="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2><font class="logo" color="00B0DA">Sign</font><font class="logo" color="ffb819"> Up</font></h2>
+		    <div class="col-md-4 col-md-offset-4">
+		      <form onsubmit="handleSignup();" class="form form-signup" role="form">
+			    <div class="form-group">
+                              <div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+				</span>
+				<input id="email" type="text" class="form-control" placeholder="Email Address" />
+                              </div>
+			    </div>
+			    <!-- <a href="http://www.jquery2dotnet.com" class="btn btn-sm btn-primary btn-primary-cal" role="button">
+			    SUBMIT</a> -->
+			  </form>
+		      </div>
+		    </div>
+		</div>
+            </div>
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
     <!-- About -->
     <section id="about" class="about">
@@ -76,8 +102,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Need some help but don't have the cash for it? </h2>
-                    <h2>Try <font color="00B0DA">CAL</font><font color="ffb819">aborate</font>!</h2>
-                    <p class="lead">Earn points by using your time to help your fellow students, then exchange those points in return for the services you need.</p>
+                    <h2>Try <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>!</h2>
+                    <p class="lead">Earn points by using your time to help other Cal students, then exchange those points in return for the services you need.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -225,8 +251,52 @@
                         <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="why-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="why-heading">Give back to your community</h4>
+                    <p class="text-muted">Reach out to other students, broaden your network and make friends!</p>
+                </div>            
+                <div class="col-lg-12 text-center">
+		  <div class="btn btn-dark btn-lg signin">Try it now!</div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+<!-- Why us Section -->
+    <section id="why" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Why <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>?</h2>
+                    <hr class="small">
+                    <h3 class="section-subheading text-muted"><font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font> is run for the students, by the students.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="why-heading">Fast, safe services</h4>
+                    <p class="text-muted">Users limited to current Berkeley students who that are right around the corner to help.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="why-heading">No money required </h4>
+                    <p class="text-muted">Get professional advice, academic tutoring, rides from the airport and even more, all without paying a cent!</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="why-heading">Give back to your community</h4>
+                    <p class="text-muted">Reach out to other students, broaden your network and make friends!</p>
                 </div>
             </div>
         </div>
@@ -375,6 +445,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
+     //GLOBALS
+     var hasSignedUp = false;
+     
      // Closes the sidebar menu
      $("#menu-close").click(function(e) {
        e.preventDefault();
@@ -404,7 +477,7 @@
        });
      });
 
-     // Opens up the learn more boxes for each description
+     // Opens the learn more boxes for each description
      $(".learn-more").click(function(e) {
        var service_item = $( this ).parent()[0];
        var service_item_detail = $( $( this ).parents()[1] ).children()[1];
@@ -420,6 +493,40 @@
 	 $( service_item ).slideDown();	 
        });
      });
+
+     // Opens the signup/signin section above about and then travels to it
+     function scrollToElem(elem,delay){
+       $('html, body').animate({
+         scrollTop: $(elem).offset().top
+       },delay);
+     }
+     function setAlreadySignedUp(){
+       $("#signup").show();
+       $("#signup").find(".text-center").html(
+	 "<h2><font class=\"logo\" color=\"00B0DA\">Already Signed up!</font></h2>"
+       );
+       $( "#signup" ).delay( 2000 ).slideUp( 500 );
+     }
+     $(".signin").click(function(e) {
+       console.log(hasSignedUp);
+       if (hasSignedUp) { setAlreadySignedUp(); }
+       hasSignedUp = true;
+       $("#signup").show();
+       scrollToElem("#signup",1000);
+       $("#email").focus();
+       
+     });
+
+     // Hide signup area on enter
+     function handleSignup(){
+       hasSignedUp = true;
+       var child_text = $("#signup").find(".text-center");
+       child_text.html(
+	 "<h2><font class=\"logo\" color=\"00B0DA\">Thank You!</font><font class=\"logo\" color=\"ffb819\"></font></h2>"
+       );
+       scrollToElem("#signup",1);
+       $( "#signup" ).delay( 2000 ).slideUp( 500 );
+     }
 
     </script>
 

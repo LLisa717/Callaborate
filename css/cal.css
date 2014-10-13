@@ -6,3 +6,11 @@
 .text-primary-cal{
     color: #00B0DA;
 }
+
+#signup{
+    display:none;
+}
+
+.btn-primary-cal {
+    background-color: #00B0DA;
+}
