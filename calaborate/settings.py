@@ -49,6 +49,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+
 ROOT_URLCONF = 'calaborate.urls'
 
 WSGI_APPLICATION = 'calaborate.wsgi.application'
