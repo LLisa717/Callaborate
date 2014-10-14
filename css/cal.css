@@ -19,3 +19,7 @@
 .container-tryitnow{
     height: 100%;
 }
+
+.sm-link-bar > a{
+    padding-right: 10px; 
+}
