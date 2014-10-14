@@ -16,3 +16,4 @@ dist/
 #Tags and node apps
 TAGS
 node_modules/
+.sqlite
