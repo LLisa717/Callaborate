@@ -1,4 +1,5 @@
 from django.template import RequestContext, Template, Context
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 @csrf_exempt 
