@@ -9,7 +9,10 @@ parts
 src/*.egg-info
 lib
 lib64
-
+*.pyc
+*.pyo
+build/
+dist/
 #Tags and node apps
 TAGS
 node_modules/
