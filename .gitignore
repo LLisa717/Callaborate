@@ -1,2 +1,15 @@
+#Django
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+
+#Tags and node apps
 TAGS
 node_modules/
