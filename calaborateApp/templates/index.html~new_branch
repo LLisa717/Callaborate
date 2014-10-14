@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome to Callaborate </title>
+    <link rel="shortcut icon" href="img/c.ico" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-extensions.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/cal.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Lisa's Callaborate</a>
+            </li>
+            <li>
+                <a href="#top">My Profile</a>
+            </li>
+            <li>
+                <a href="#about">My Tasks</a>
+            </li>
+            <li>
+                <a href="#services">Find A Helper</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Welcome to <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>!</h1>
+            <h3>Helping students help students.</h3>
+            <br>
+            <div class="btn btn-dark btn-lg signin">Sign Up</div>
+	    <!-- <div class="btn btn-dark btn-lg signin">Login</div> -->
+            <a href="#how" class="btn btn-dark btn-lg">How it works</a>
+        </div>
+    </header>
+
+    <!-- Signup/in page  -->
+    <section id="signup" class="signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2><font class="logo" color="00B0DA">Sign</font><font class="logo" color="ffb819"> Up</font></h2>
+	    <div class="col-md-4 col-md-offset-4">
+	      <form onsubmit="handleSignup();" class="form form-signup" role="form">
+		<div class="form-group">
+		    <i style="display:none;" class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+		  <div class="input-group">
+
+		    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+		    </span>
+		    <input id="email" type="text" class="form-control" placeholder="Email Address" />
+
+		  </div>
+		</div>
+		<!-- <a href="http://www.jquery2dotnet.com" class="btn btn-sm btn-primary btn-primary-cal" role="button">
+		SUBMIT</a> -->
+	      </form>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </section>
+
+    
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Need some help but don't have the cash for it? </h2>
+                    <h2>Try <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>!</h2>
+                    <p class="lead">Earn points by using your time to help other Cal students, then exchange those points in return for the services you need.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary-cal">
+        <div class="container">
+            <div class="row text-center">
+	      <div class="col-lg-10 col-lg-offset-1">
+	      <!-- <div class="col-lg-12"> -->
+	      <!-- <h1>Our Services</h1>
+              <hr class="small"> -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pencil fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>Academic Tutoring</strong>
+                                </h4>
+                                <p>Find students who can help you through a difficult course.</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+				
+                            </div>
+                            <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>Academic Tutoring</strong>
+                                </h4>
+                                <p>Study sessions offered by the school are often crowded, and 1 on 1 tutoring is far too expensive for most. Calaborate can connect you with students that are willing to help you through the tough classes. Check out posts made by tutors for one that you think you will pair well with. If you don't find any, make a post yourself.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+				
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-truck fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>House Moving/Cleaning</strong>
+                                </h4>
+                                <p>Make your move faster with help from a friend.</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+                           <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>House Moving/Cleaning</strong>
+                                </h4>
+                                <p>We are moving around all the time, usually about once a year. Instead of shelling out a bunch of cash for a U-haul, check Calaborate for someone offering up their truck. Someone may just need a helping hand packing up, that is a perfect way for you to earn some points. Who has time to clean?! Well, some of us. Find out who on Calaborate.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+ 
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-car fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>Share Rides</strong>
+                                </h4>
+                                <p>Don't want to Uber to the grocery every week? Catch a ride</p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+			    <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>Share Rides</strong>
+                                </h4>
+                                <p>Want to avoid taking public transit when you are heading to the airport with all of your luggage? Just post a request for a ride. If you are heading down to SoCal for holiday, then make a post and try to earn some points by sharing your ride.</p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-reorder fa-stack-1x text-primary-cal"></i>
+                            </span>
+                                <h4>
+                                    <strong>And many others...</strong>
+                                </h4>
+                                <p>Resume critiques; Interview Prep; Physical training; </p>
+                                <div class="btn btn-light learn-more">Learn More</div>
+                            </div>
+			    <div class="service-item-detail">
+                            </span>
+                                <h4>
+                                    <strong>And many others... details</strong>
+                                </h4>
+                                <p>You aren't limited to getting help with what we have mentioned. Make a post about any services you may need. Think about what you shine at and consider if that will be helpful to others. Seek out professional services like resume critiques, interview prep, and case study practice. Find a running partner, or someone that can share their personal training expertise. </p>
+                                <div class="btn btn-light learn-less">Learn Less</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- How it works secion -->
+    <section id="how" class="how">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How  <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>  works</h2>
+                    <h3 class="section-subheading text-muted">Earning and using points</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+		      <font color="#5bb68d">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+		      </font>
+			<strong class="fa-stack-1x"><font color="#FFFFFF">1</font></strong>
+			<!-- <i class="fa fa-copyright fa-stack-1x fa-inverse"></i> -->
+                    </span>
+                    <h3 class="why-heading">Post a Request</h3>
+                    <p class="text-muted">
+		      Post a request for the task that you need help with under its category. Calaborate will help you to reach out to helpers who have the necessary skills. So sit back and wait for the offers to roll in. <!-- You get 100 points just for signing up! After those first 100, you get new points by contributing to the community. The more you contribute, the more you earn. For now, sit back and -->
+		    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+		      <font color="#f9ab46">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+		      </font>
+			<strong class="fa-stack-1x"><font color="#FFFFFF">2</font></strong>
+                    </span>
+                    <h3 class="why-heading">Receive Offers</h3>
+                    <p class="text-muted">
+		      You will receive an offer for every helper that is interested in giving you a hand. You can take the time to review each offering helper's profile, and connect with the helper that best suits your needs. </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+		      <font color="#f36e36">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+		      </font>
+			<strong class="fa-stack-1x"><font color="#FFFFFF">3</font></strong>
+                    </span>
+                    <h3 class="why-heading">Get Shit Done</h3>
+                    <p class="text-muted">Once you confirm an offer, you will be contacted by a helper to coordinate a date and time that works best for the both of you. Get the help you need, and then come back here to review your experience.</p>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <!-- Try it now call to action -->
+    <section id="tryitnow" class="tryitnow">
+	  <div class="text-vertical-center">
+	    <span class="btn btn-dark btn-xlg signin">Try it now!</span>
+	  </div>
+    </section>
+    
+
+    <!-- Profile -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="offer" class="services bg-primary-cal">
+        <div class="container">
+            <div class="row">
+	      <div class="col-lg-10 col-lg-offset-1">
+		<div class="text-center">
+		<h1>Example Offer</h1>
+		</div>
+                    <div class="row offer-container">
+                        <div class="col-md-4 col-sm-4">	
+			  <div class="offer-pic"></div>
+			  <div class="text-center">
+			    <h1>Oski</h1>
+			    <font color="ffb819">
+			      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></font>
+			  </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">			  
+			  <h3><font color="ffb819">Oski is offering to critique your resume</font></h3>
+			  <h4>Qualifications</h4>
+			  <ul>			    
+			    <li> Major: Forestry</li>
+			    <li> Has held down a job at UC Berkeley for 70+ years </li>			    
+			  </ul>
+			  <div class="sm-link-bar">
+			    <a href="http://ar.linkedin.com/pub/oski-oski/43/568/902">
+			      <i class="fa fa-linkedin fa-2x"></i>
+			    </a> 			 
+			    <a href="https://twitter.com/Oski">
+			      <i class="fa fa-twitter fa-2x"></i> 
+			    </a>
+			    <a href="https://www.facebook.com/cal.oski.bear">
+			      <i class="fa fa-facebook fa-2x"></i> 
+			    </a>
+
+			  </div>
+			  
+			  <h4>Description</h4>
+			  
+			  Heyyo! My name's Oski. I chug beer-like liquids through a hole in my right eye. I am 5-foot-7-inches, and I wear a size 15 shoe.
+			  
+                        </div>
+
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Why us Section -->
+    <section id="why" class="why">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Why <font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font>?</h2>
+                    <hr class="small">
+                    <h3 class="section-subheading text-muted"><font class="logo" color="00B0DA">CAL</font><font class="logo" color="ffb819">aborate</font> is run for the students, by the students.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="why-heading">Fast, safe services</h4>
+                    <p class="text-muted">Everyone you will interact with is just like you, a Berkeley student. No long drives, no bus rides, everyone lives nearby. Close and convenient. </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse">
+			  <i class="fa fa-ban fa-stack-1x text-danger"></i>
+			</i>
+                    </span>
+                    <h4 class="why-heading">No money required </h4>
+                    <p class="text-muted">Get professional advice, academic tutoring, rides from the airport and even more, all without paying a cent! Just pay it forward by helping in whatever way you can. </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary-cal"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="why-heading">Give back to your community</h4>
+                    <p class="text-muted">Reach out to other students, broaden your network and make friends! Grow with Berkeley's sharing economy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Calaborate</strong>
+                    </h4>
+		    <p>Berkeley Skydeck</p>
+                    <p>2150 Shattuck Ave<br>Berkeley, CA 94704</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a class="text-primary-cal" href="mailto:inquiries@callaborate.com">inquiries@callaborate.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x text-primary-cal"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x text-primary-cal"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Calaborate 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+     //GLOBALS
+     var hasSignedUp = false;
+     
+     // Closes the sidebar menu
+     $("#menu-close").click(function(e) {
+       e.preventDefault();
+       $("#sidebar-wrapper").toggleClass("active");
+     });
+
+     // Opens the sidebar menu
+     $("#menu-toggle").click(function(e) {
+       e.preventDefault();
+       $("#sidebar-wrapper").toggleClass("active");
+     });
+
+     // Scrolls to the selected menu item on the page
+     $(function() {
+       $('a[href*=#]:not([href=#])').click(function() {
+         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+           if (target.length) {
+             $('html,body').animate({
+               scrollTop: target.offset().top
+             }, 1000);
+             return false;
+           }
+         }
+       });
+     });
+
+     // Opens the learn more boxes for each description
+     $(".learn-more").click(function(e) {
+       var service_item = $( this ).parent()[0];
+       var service_item_detail = $( $( this ).parents()[1] ).children()[1];
+       $( service_item ).slideUp(function() {
+	 $( service_item_detail ).slideDown();	 
+       });
+
+     });
+     $(".learn-less").click(function(e) {
+       var service_item_detail = $( this ).parent()[0];
+       var service_item = $( $( this ).parents()[1] ).children()[0];
+       $( service_item_detail ).slideUp(function() {
+	 $( service_item ).slideDown();	 
+       });
+     });
+
+     // Opens the signup/signin section above about and then travels to it
+     function scrollToElem(elem,delay){
+       $('html, body').animate({
+         scrollTop: $(elem).offset().top
+       },delay);
+     }
+     // Set text field of signup area to show that user has already signed up
+     function setAlreadySignedUp(){
+       $("#signup").show();
+       $("#signup").find(".text-center").html(
+	 "<h2><font class=\"logo\" color=\"00B0DA\">Already Signed up!</font></h2>"
+       );
+       $( "#signup" ).delay( 2000 ).slideUp( 500 );
+     }
+
+     // Signup button handler
+     $(".signin").click(function(e) {
+       console.log(hasSignedUp);
+       if (hasSignedUp) { setAlreadySignedUp(); }
+       hasSignedUp = true;
+       $("#signup").show();
+       scrollToElem("#signup",1000);
+       $("#email").focus();       
+     });
+
+     // Hide signup area on enter
+     function handleSignup(){
+       hasSignedUp = true;
+       $("#signup").find(".input-group").hide();
+       $("#signup").find(".fa-spin").show();             
+       setTimeout(function () {
+	 var child_text = $("#signup").find(".text-center");
+	 child_text.delay( 2000 ).html(
+	   "<h2><font class=\"logo\" color=\"00B0DA\">Thank You!</font><font class=\"logo\" color=\"ffb819\"></font></h2>"
+	 );
+
+	 setTimeout(function() {
+	   $( "#signup" ).slideUp( 500 );
+	 }, 2000);	 
+       }, 2000); 
+       scrollToElem("#signup",1);
+
+     }
+
+    </script>
+
+</body>
+
+</html>
