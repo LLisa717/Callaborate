@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import 
+from django.template import RequestContext, Template, Context
 
 # Create your views here.
 @csrf_exempt 
