@@ -11,5 +11,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'calaborateApp.views.index'),
-    url(r'^accounts/', include('registration.backends.emailonly.urls')),
+    url(r'^accounts/', include('registration.backends.default.urls')),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
