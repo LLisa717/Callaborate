@@ -52,6 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 SITE_ID = 1
 ACCOUNT_ACTIVATION_DAYS = 1 # One-day activation window; 
@@ -61,6 +62,19 @@ ROOT_URLCONF = 'calaborate.urls'
 
 WSGI_APPLICATION = 'calaborate.wsgi.application'
 
+VALID_EMAIL_DOMAINS = (
+    'asdf.com',
+    'berkeley.edu',    
+)
+
+# if DEBUG:
+#     from getpass import getpass
+#     EMAIL_USE_TLS = True
+#     EMAIL_HOST = 'smtp.gmail.com'
+#     EMAIL_PORT = 587
+#     EMAIL_HOST_USER = 'icesportsforumsocialmedia@gmail.com'
+#     EMAIL_HOST_PASSWORD = getpass('gmailpassword:')
+#     DEFAULT_FROM_EMAIL = 'callaborate@gmail.com'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

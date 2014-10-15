@@ -1,0 +1,1 @@
+{% load i18n %}{% trans "Unable to register on" %} {{ site.name }}

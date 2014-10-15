@@ -1,0 +1,3 @@
+{% load i18n %}
+
+Sorry, you can only register with a berkeley.edu email address
