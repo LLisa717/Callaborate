@@ -33,10 +33,13 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.sites',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'registration',
     'calaborateApp',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,6 +53,9 @@ MIDDLEWARE_CLASSES = (
 )
 
 EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+SITE_ID = 1
+ACCOUNT_ACTIVATION_DAYS = 1 # One-day activation window; 
+REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.
 
 ROOT_URLCONF = 'calaborate.urls'
 
