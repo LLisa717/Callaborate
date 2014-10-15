@@ -72,19 +72,19 @@ $(".signin").click(function(e) {
 });
 
 // Hide signup area on enter
-// $("#signup-form").submit(function() {
-//     hasSignedUp = true;
-//     $("#signup").find(".input-group").hide();
-//     $("#signup").find(".fa-spin").show();             
-//     setTimeout(function () {
-// 	var child_text = $("#signup").find(".text-center");
-// 	child_text.delay( 2000 ).html(
-// 	    "<h2><font class=\"logo\" color=\"00B0DA\">Thank You!</font><font class=\"logo\" color=\"ffb819\"></font></h2>"
-// 	);
-// 	setTimeout(function() {
-// 	    $( "#signup" ).slideUp( 500 );
-// 	}, 2000);	 
-//     }, 2000); 
-//     scrollToElem("#signup",1);
-//     return false;
-// });
+$("#signup-form").submit(function() {
+    hasSignedUp = true;
+    $("#signup").find(".input-group").hide();
+    $("#signup").find(".fa-spin").show();             
+    setTimeout(function () {
+	var child_text = $("#signup").find(".text-center");
+	child_text.delay( 2000 ).html(
+	    "<h2><font class=\"logo\" color=\"00B0DA\">Thank You!</font><font class=\"logo\" color=\"ffb819\"></font></h2>"
+	);
+	setTimeout(function() {
+	    $( "#signup" ).slideUp( 500 );
+	}, 2000);	 
+    }, 2000); 
+    scrollToElem("#signup",1);
+    return false;
+});
