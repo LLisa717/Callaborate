@@ -52,7 +52,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 SITE_ID = 1
 ACCOUNT_ACTIVATION_DAYS = 1 # One-day activation window; 
 REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.
