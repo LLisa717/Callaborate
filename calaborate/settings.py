@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 SITE_ID = 1
 ACCOUNT_ACTIVATION_DAYS = 1 # One-day activation window; 
 REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.
@@ -71,10 +71,9 @@ if DEBUG:
     EMAIL_USE_TLS = True
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'zacksemailaccount'
-    EMAIL_HOST_PASSWORD = getpass('gmail password:')
-    DEFAULT_FROM_EMAIL = 'icesportsforumsocialmedia@gmail.com'
-    DEFAULT_TO_EMAIL = 'huh?'
+    EMAIL_HOST_USER = 'icesportsforumsocialmedia@gmail.com'
+    EMAIL_HOST_PASSWORD = getpass('gmailpassword:')
+    DEFAULT_FROM_EMAIL = 'callaborate@gmail.com'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
