@@ -61,6 +61,20 @@ ROOT_URLCONF = 'calaborate.urls'
 
 WSGI_APPLICATION = 'calaborate.wsgi.application'
 
+VALID_EMAIL_DOMAINS = (
+    'asdf.com',
+    'berkeley.edu',    
+)
+
+if DEBUG:
+    from getpass import getpass
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_PORT = 587
+    EMAIL_HOST_USER = 'zacksemailaccount'
+    EMAIL_HOST_PASSWORD = getpass('gmail password:')
+    DEFAULT_FROM_EMAIL = 'icesportsforumsocialmedia@gmail.com'
+    DEFAULT_TO_EMAIL = 'huh?'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
