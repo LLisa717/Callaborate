@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% block content %}
+
+{% if form.subject.errors %}
+    <ol>
+    {% for error in form.subject.errors %}
+        <li><strong>{{ error|escape }}</strong></li>
+    {% endfor %}
+    </ol>
+{% endif %}
+
     <!-- About -->
     <section id="about" class="about">
       <div class="container">
