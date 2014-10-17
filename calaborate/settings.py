@@ -62,9 +62,9 @@ ROOT_URLCONF = 'calaborate.urls'
 
 WSGI_APPLICATION = 'calaborate.wsgi.application'
 
-VALID_EMAIL_DOMAINS = (
-    'asdf.com',
+VALID_EMAIL_DOMAINS = (    
     'berkeley.edu',    
+    'asdf.com',
 )
 
 # if DEBUG:
