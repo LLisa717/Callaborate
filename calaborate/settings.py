@@ -131,24 +131,24 @@ STATICFILES_DIRS = (
 )
 
 print STATICFILES_DIRS
-# from django.core.exceptions import ImproperlyConfigured
+from django.core.exceptions import ImproperlyConfigured
 
-# def get_env_variable(var_name):
-#     """ Get the environment variable or return exception """
-#     try:
-#         return os.environ[var_name]
-#     except KeyError:
-#         error_msg = "Set the %s environment variable" % var_name
-#         raise ImproperlyConfigured(error_msg)
+def get_env_variable(var_name):
+    """ Get the environment variable or return exception """
+    try:
+        return os.environ[var_name]
+    except KeyError:
+        error_msg = "Set the %s environment variable" % var_name
+        raise ImproperlyConfigured(error_msg)
 
-# group = get_env_variable('DJANGO_SETTINGS_GROUP')
+group = get_env_variable('DJANGO_SETTINGS_GROUP')
 
-# if group == 'local':
-#     from settings_groups.local import *
-# elif group == 'staging':
-#     from settings_groups.staging import *
-# elif group == 'production':
-#     from settings_groups.production import *
-# else:
-#     raise ImproperlyConfigured('DJANGO_SETTINGS_GROUP env var must be set to either "local", "staging", or "production"')
+if group == 'local':
+    from settings_groups.local import *
+elif group == 'staging':
+    from settings_groups.staging import *
+elif group == 'production':
+    from settings_groups.production import *
+else:
+    raise ImproperlyConfigured('DJANGO_SETTINGS_GROUP env var must be set to either "local", "staging", or "production"')
 
