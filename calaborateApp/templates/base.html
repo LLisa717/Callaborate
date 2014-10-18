@@ -11,20 +11,12 @@
     <link rel="shortcut icon" href="{% static "img/c.ico" %}" />
 
 
-    <!-- Bootstrap Core CSS -->
-
-    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
-    <link href="{% static "css/bootstrap-extensions.css" %}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{% static "css/stylish-portfolio.css" %}" rel="stylesheet">
-    <link href="{% static "css/cal.css" %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{% static "css/fonts.css" %}" rel="stylesheet">
-    <link href="{% static "font-awesome-4.2.0/css/font-awesome.min.css" %}"  rel="stylesheet" type="text/css">
-
-
+  {% load compressed %}
+  <!-- Bootstrap Core CSS -->
+  <!-- Custom CSS -->
+  <!-- Custom Fonts -->  
+  {% compressed_css 'calaborate' %}
+  {% compressed_css 'fonts' %}
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,16 +67,7 @@
     </div>
     </footer> -->
 
-    {% block content %}
-    
-    {% endblock %}
-
+    {% compressed_js 'calaborate' %}
     <!-- jQuery Version 1.11.0 -->
-    <script src="{% static "js/jquery-1.11.0.js" %}"></script>
-
     <!-- Bootstrap Core JavaScript -->
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-
     <!-- Landing page JavaScript -->
-    <script src="{% static "js/landing.js" %}"></script>
-

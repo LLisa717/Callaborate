@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pipeline',
     'calaborateApp',
 )
 
@@ -125,12 +126,48 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
-print BASE_DIR
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
-print STATICFILES_DIRS
+PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
+PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
+
+PIPELINE_CSS = {
+    'fonts': {
+        'source_filenames' :(
+            'css/fonts.css',
+            'font-awesome-4.2.0/css/font-awesome.min.css'
+        ),
+        'output_filename': 'css/all_fonts.css',
+    },
+    'calaborate': {
+        'source_filenames': (
+            'css/bootstrap.min.css',
+            'css/bootstrap-extensions.css',
+            'css/stylish-portfolio.css',
+            'css/cal.css',
+        ),
+        'output_filename': 'css/calaborate.css',
+        'extra_context': {
+            'media': 'screen,projection',
+        },
+    },
+}
+
+PIPELINE_JS = {
+    'calaborate': {
+        'source_filenames': (
+          'js/jquery-1.11.0.js',
+          'js/bootstrap.min.js',
+          'js/landing.js',
+        ),
+        'output_filename': 'js/callaborate.js',
+    }
+}
+
+
 from django.core.exceptions import ImproperlyConfigured
 
 def get_env_variable(var_name):
